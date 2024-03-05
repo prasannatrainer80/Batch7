@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            "use strict"    
+            var hello = () => "Welcome to Lambda Expression...";
+            var sum = (a,b) => {return a+b};
+            var sub = (a,b) => {return a-b};
+            var mult = (a, b) => {alert(a*b)};
+            function show() {
+                alert(hello());
+            }
+        </script>
+    </head>
+<body>
+    <input type="button" value="Lambda Hello" onclick="show()" />
+    <br/><br/>
+    <input type="button" value="Mult" onclick="mult(12,5)" />
+</body>
+</html> 

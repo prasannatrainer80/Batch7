@@ -1,0 +1,90 @@
+"use strict"; Defines that JavaScript code should be executed in "strict mode".
+
+The "use strict" Directive
+The "use strict" directive was new in ECMAScript version 5.
+
+It is not a statement, but a literal expression, ignored by earlier versions of JavaScript.
+
+The purpose of "use strict" is to indicate that the code should be executed in "strict mode".
+
+With strict mode, you can not, for example, use undeclared variables.
+
+All modern browsers support "use strict" except Internet Explorer 9 and lower:
+
+"use strict";
+x = 3.14;    
+
+
+"use strict";
+myFunction();
+
+function myFunction() {
+  y = 3.14;   // This will also cause an error because y is not declared
+}
+
+console.log() -> 
+
+typeof() -> Used to see the typeof datatype stored in that variable. 
+
+
+function sum(a, b) {
+   return a+b;
+}
+
+Lambda functions are known as short functions, they are present now a days in all programming languages including javascript.  
+
+This is called as pure and short anonymous function that takes parameters or zero parameters and contains as an expression.
+
+Each to read and write. 
+
+expression = (parameters) => action; 
+
+var result = (a, b) => a+b;
+
+var greeting = () => "Good Morning";
+
+
+fetch : This method allows you to read data from specific external source/url/array/collection etc...
+
+
+syntax : 
+
+fetch(url).then()
+
+fetch() method returns 2 promise values known as resolve and reject.
+
+resolve ensures, the url/source is correctly loaded or not 
+
+reject ensures, then url/source is not loaded or wrong source u selected. 
+
+to convert data into json format,
+
+fetch(url).then(res => res.json())
+
+Here above first it checks the url is working fine or not, if it works then the result will be converted into
+json format. 
+
+If you want to write multiple statements, you need to open the block. 
+
+fetch(url).then(res => {
+   console.log(res);
+   res => res.json();
+});
+
+But, multiple actions you need to write, then clause will be defined multiple times, as above example, first convert into json() format, then you need to display, that situation define then clause 2 times as
+
+fetch(url).then(res => res.json()).then(out => {
+
+});
+
+
+
+
+
+
+
+
+
+
+
+

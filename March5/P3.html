@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function Load() {
+                alert("Document Loaded...");
+                console.log("Load Method already Called...");
+            }
+            function show() {
+                console.log("Button Click Event Raised...");
+                alert("Show Method...");
+            }
+        </script>
+    </head>
+<body onload="Load()">
+    <input type="button" value="Show" onclick="show()" />
+</body>
+</html>

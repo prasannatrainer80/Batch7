@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+           function show() {
+         //   var result=[];
+            let url = "https://jsonplaceholder.typicode.com/users";
+            fetch(url)
+            .then(res => res.json()).then(out => {
+                console.log(out);
+                for(var v in out) {
+                    alert("Id "+out[v].id + "Name " +out[v].name + 
+                        "UserName : " +out[v].username + 
+                        "Email : " +out[v].email
+                    );
+                }
+                  
+            })
+                     
+           }
+        </script>
+    </head>
+<body onload="show()">
+</body>
+</html>
