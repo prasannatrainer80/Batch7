@@ -1,0 +1,40 @@
+What is diff. between onclick and addEventListener ???
+
+onclick event binds the event with html strongly. As at the time of loading the document, it checks for event and binds that.  So, if you remove the javascript code, it becomes tedious. 
+
+addEventListener binds the event to html tags at runtime, as designer no need to take care of events, simply he designs the page, as programmer will bind the event to tags.  
+
+So, the separation of code between developer and designer to be segregated by using addEventListener. 
+
+debugger : Used to add breakpoints to the given javascript code. 
+
+Assume we have 10 lines of code of javascript, then in 5th line we need to pause once and then resume,
+8th line needs to pause once and resume then you plesae add debugger to that. 
+
+Exception Handling is a mechanism of handling the runtime errors during the execution of the program. 
+
+There are 2 types of errors as
+
+1) Syntax Errors : javascript interpreter will take care
+
+2) Runtime Errors : During runtime if you pass invalid values, the kind of errors we are getting known as runtime errors.  By using Exception handling we can overcome this kind of errors. 
+
+for handling, we have 3 blocks 
+
+1) try block : This block contains statements in which there is possibility of getting runtime errors, the statements which are placed in this block are treated as heavy weighted statements. 
+
+2) catch block : Once exception raised in try block, control moves to catch block, this block contains alternate statement(s) for exception raised in try block.
+
+3) finally block 
+
+Error is the predefined object for exception handling.
+
+try {
+...
+...
+} catch (Error e) {
+ document.writeln(e);
+}
+
+
+

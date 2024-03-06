@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function show() {
+                if (isNaN(frmTest.age.value)) {
+                    alert("Please Enter Numbers Only...");
+                    frmTest.age.value="";
+                    return;
+                }
+              var age = frmTest.age.value;
+              alert(age);
+
+            }
+        </script>
+    </head>
+<body>
+    <form name="frmTest">
+        Age : 
+        <input type="text" name="age" /> <br/><br/>
+        <input type="button" value="Show" onclick="show()" />
+    </form>
+</body>
+</html>
