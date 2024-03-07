@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            class ExcelrTraining {
+                constructor(sid, name, idCard, courseSheet, accessRecording) {
+                    this.sid = sid;
+                    this.name = name;
+                    this.idCard = idCard;
+                    this.courseSheet = courseSheet;
+                    this.accessRecording = accessRecording;
+                }
+
+                show() {
+                    document.writeln("Student Id  " +this.sid + "<br/>");
+                    document.writeln("Student Name  " +this.name + "<br/>");
+                    document.writeln("Id Card  " +this.idCard + "<br/>");
+                    document.writeln("Course Sheet  " +this.courseSheet +"<br/>");
+                    document.writeln("Access to Recording  " +this.accessRecording + "<br/>");
+
+                }
+            }
+        </script>
+    </head>
+<body>
+    <script>
+        var objPavan =new ExcelrTraining(12, "Pavan", "ID007","Excel Sheet","Yes");
+        objPavan.show();
+    </script>
+</body>
+</html>

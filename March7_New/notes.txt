@@ -1,0 +1,104 @@
+Exception Handling : 
+______________________
+
+It is a mechanism of handling the runtime errors during execution of the program.
+
+
+var x = 2;
+x.toUpperCase();
+
+to handle exceptions, we have 3 blocks as
+
+1) try block  : This block contains statement(s) in which there is possibility of getting runtime errors. 
+The statements which are placed in try block are treated as heavy weighted statement(s). 
+
+2) catch block : Once exception raised in try block, then control will be forwarded to catch block, this block contains alternate statement(s) for exceptions raised in try block. 
+
+3) finally block : This block contains statement(s) that needs to be executed mandetorily irrespective of try and catch blocks, this block is not mandetory, but all the statement(s) which are placed in this block are executed as mandetory statement(s).
+
+error is the predefined object that which contains
+
+name -> errorName
+
+message -> error message.
+
+error object inadequate to handle all situations, but if you want to throw userdefined messages with error object, then we need the help of throw keyword. 
+
+syntax  :
+
+throw "message"
+throw
+
+Write a program as accept 2 numbers and implement sum
+
+any number < 0 then throw message as "Negative Numbers Not allowed..."
+
+any number = 0 then throw message as "Zero is Invalid Value..."
+
+Write a program to accept an email (string) and check its valid email or not.  How to check is if @ found in that string its valid else invalid. 
+
+You can define a class by using 
+
+class className {
+...
+...
+...
+}
+
+To initialize the member variables of the class, then we need the help of constructor. 
+
+constructor will be called automatically once the object created. 
+
+Object Oriented Programming : It is an approach that provides a way of modularizing programming, that which can be used to create small partition memory area for both data and objects, which are to be used as templates for creating copies of such modules on demand. 
+
+class : A class is a template or blueprint, that which contains combination of data members and meber functions. 
+
+members of the class can be accessable by using instance of the class. 
+
+class class_name {
+   data members;
+   member functions;
+}
+
+constructors allows you to load or assign default values. 
+
+Initialize the member variables of the class. 
+
+in javascript, you can define constructor by using keyword constructor() { }
+
+this constructor will be invoked automatically once you create an object. 
+
+
+static methods : These are called class methods, which are to be called by using class name.
+
+No object required to call these methods. 
+
+Inheritance : Deriving a new class from already existing class known as inheritance, the class which derived known as derived class, the class from which its derived known as base class. Through inheritance, we can reduce the size of the program.
+
+class c1 {
+...
+...
+}
+
+class c2 extends c1 {
+...
+...
+...
+}
+
+Once you create an object to c2 class, you can access c1 class members also. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

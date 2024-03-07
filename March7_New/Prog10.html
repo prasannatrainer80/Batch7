@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+            class MorningBatch {
+            timing() {
+                alert("Morning 7 AM to 9 AM...");
+            }
+            trainer() {
+                alert("Trainer Prasanna...");
+            }
+            address() {
+                alert("CyberTowers Hyderabad...");
+            }
+            }
+        </script>
+    </head>
+<body>
+    <script>
+        var objPavan = new MorningBatch();
+        var objKomal = new MorningBatch();
+        var batch = [
+            objPavan, objKomal
+        ];
+        for(var v in batch) {
+            batch[v].trainer()
+            batch[v].timing();
+            batch[v].address();
+        }
+        // objPavan.timing();
+        // objPavan.trainer();
+        // objPavan.address();
+        // objKomal.timing();
+        // objKomal.trainer();
+        // objKomal.address();
+    </script>
+</body>
+</html>

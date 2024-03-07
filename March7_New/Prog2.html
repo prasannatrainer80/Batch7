@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function greeting() {
+                alert("Good Morning to all...");
+            }
+
+            function show() {
+                try {
+                    greeting();
+                } catch(error) {
+                    //  document.writeln(error.message);
+                    document.getElementById("error").innerHTML = error.message + "<br/>";
+                } finally {
+                    document.getElementById("final").innerHTML="Program from Morning 7AM Batch...<br/>";
+                }
+            }
+        </script>
+    </head>
+<body onload="show()">
+    <span id="error" style="color: red;"></span>
+    <span id="final" style="color: blue;"></span>
+</body>
+</html>
